@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>three wonders of the world</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Three wonders of the world</h1>
+<p>Адрес: Москва, ул. Пушкина д.25 </p>
+<p>Телефон: +7 (123) 456-7890</p>
+</header>
+
+<nav class="buttons">
+<ul>
+<li><a href="#menu">Меню</a></li>
+<li><a href="#reservation">Бронирование</a></li>
+</ul>
+</nav>
+
+<section id="menu">
+<h2 class="forh2">Меню</h2>
+
+<div class="menu-item">
+<img src="food1.jpg" alt="Блюдо 1">
+<h2 class="forh2">Пинчос </h2>
+<h3>это уникальная и ароматная закуска, которая покорит вас своим разнообразием вкусов и текстур. Пинчос - это традиционное испанское блюдо, состоящее из различных ингредиентов, нанизанных на шпажку. Оно является одним из главных представителей тапас - культовой испанской кухни. </p>
+</h3><p class="p2">Цена: 12 500 рублей</p>
+</div>
+
+<div class="menu-item">
+<img src="food2.jpg" alt="Блюдо 2">
+<h2 class="forh2">Суп карри лакса</h2>
+<h3>Cуп сочетает в себе восточные специи, нежное кокосовое молоко и свежие морепродукты, создавая настоящий взрыв вкусов на вашем языке Главным ингредиентом этого блюда является кокосовое молоко, которое придает супу нежность и кремовость. В нем также присутствуют свежие креветки, которые дополняют вкусовой букет блюда своей сочностью и морским оттенком.</p>
+</h3><p class="p2">Цена: 300 000 рублей</p></h3>
+</div>
+
+<div class="menu-item">
+<img src="food3.jpg" alt="Блюдо 2">
+<h2 class="forh2">Теплый лобстер по-летнему </h2>
+<h3>это изысканное блюдо, которое не оставит равнодушным ни одного гурмана. Главным героем этого блюда является свежий лобстер, приготовленный на гриле. Мясо лобстера остается нежным и сочным, а его аромат и вкус придают блюду особую привлекательность. Блюдо подается с ароматными и свежими летними овощами, которые придают ему особую свежесть и легкость. Дополняется теплый лобстер по-летнему нежным соусом, который подчеркивает его вкус и аромат, создавая идеальное сочетание</p>
+</h3><p class="p2">Цена: 55 000 рублей</p>
+</header>
+</div>
+</section>
+
+<section id="reservation">
+<h2>Бронирование</h2>
+<p>Забронировать столик:</p>
+<form>
+<label for="name">Имя:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="date">Дата:</label>
+<input type="date" id="date" name="date" required>
+
+<label for="time">Время:</label>
+<input type="time" id="time" name="time" required>
+
+<label for="phone">Телефон:</label>
+<input type="tel" id="phone" name="phone" required>
+
+
+<input type="submit" value="Забронировать">
+</form>
+</section>
+
+<footer>
+<p>&copy; 2023 three wonders of the world. Все права защищены.</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+const reservationForm = document.getElementById("reservationForm");
+const messageDiv = document.getElementById("message");
+
+reservationForm.addEventListener("submit", function (event) {
+event.preventDefault();
+
+// Получаем значения из формы
+const name = document.getElementById("name").value;
+const date = document.getElementById("date").value;
+const time = document.getElementById("time").value;
+const phone = document.getElementById("phone").value;
+
+
+// Ваш код обработки бронирования здесь
+// Например, можно отправить данные на сервер или выполнить другие действия
+
+// После обработки формы, можно очистить поля
+document.getElementById("name").value = "";
+document.getElementById("date").value = "";
+document.getElementById("time").value = "";
+document.getElementById("phone").value = "";
+
+// Отображаем сообщение об успешном бронировании
+alert= 'Бронирование выполнено успешно!';
+});
+});
+</script>
+</body>
+</html>
